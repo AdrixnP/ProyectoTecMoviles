@@ -20,8 +20,8 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                    getDefaultProguardFile("proguard-android-optimize.txt"),
+                    "proguard-rules.pro"
             )
         }
     }
@@ -45,7 +45,6 @@ dependencies {
     implementation("de.hdodenhof:circleimageview:3.0.1")
     //Picasso para poder mostrar imagenes de internet
     implementation("com.squareup.picasso:picasso:2.8")
-
-    implementation("com.airbnb.android:lottie:2.8.0")
+    //Esta es la implementacion del splash split
+    implementation("com.airbnb.android:lottie:6.1.0")
 }
-
